@@ -51,3 +51,22 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #8FC027;
 }
+
+/*Mensaje de error*/
+.flash-messages .error {
+    color: red;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #ffd4d4;
+    border: 1px solid red;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+.flash-messages .success {
+    color: green;
+    background-color: #d4ffd4;
+    border: 1px solid green;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
