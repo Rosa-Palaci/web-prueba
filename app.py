@@ -53,7 +53,39 @@ def instrucciones():
 def profesor():
     titulo = "Profesor"
 
-    return render_template('profesor.htm', titulo=titulo)
+    return render_template('profesor.html', titulo=titulo)
+
+#Dashboard
+
+# mejores
+@app.route('/mejores')
+def mejores():
+    return render_template('dashboards/mejores.html')
+
+# peores
+@app.route('/peores')
+def peores():
+    return render_template('dashboards/peores.html')
+
+# promedios
+@app.route('/promedios')
+def promedios():
+    return render_template('dashboards/promedios.html')
+
+# alumnos
+@app.route('/alumnos')
+def alumnos():
+    return render_template('dashboards/alumnos.html')
+
+# grupos
+@app.route('/grupos')
+def grupos():
+    return render_template('dashboards/grupos.html')
+
+# genero
+@app.route('/genero')
+def genero():
+    return render_template('dashboards/genero.html')
 
 # bloque de prueba
 if __name__ == "__main__":
