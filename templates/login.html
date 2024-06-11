@@ -5,13 +5,26 @@
 <body>
     <!-- seccion de navegación -->
     <header>
-        {% include "shared/navbar.html" %} 
+        <link rel="stylesheet" href="{{url_for('static', filename='css/navbar.css')}}">
+        <nav class="navbar">
+            <a href="/">
+                <div class="logo">
+                    <img src="../../static/img/escudo.png" alt="Logo de la Escuela Metropolitana">
+                </div>
+            </a>
+            
+            <div class="nav-links">
+                <a href="{{ url_for('home') }}">Inicio</a>
+                <button onclick="location.href='/login'">Iniciar Sesión</button>
+                <button onclick="window.open('https://drive.google.com/drive/folders/1_KaG49wXNkGXqzzUBkdRa_20Y1rzBaaG?usp=drive_link', '_blank')">Metro-Market</button>
+            </div>
+        </nav>
     </header>
     <!-- seccion principal -->
     <main class="main">
         <div class="container-flex">
             <img src="../static/img/profe-login.png" alt="profesores" class="profesores">
-            <form action="/login-profesores" method="post" class="form-login">
+            <form action="/profesores" method="post" class="form-login">
                 <h1>Inicio de Sesión para Profesores</h1>
                 <input type="text" id="usuario" name="usuario" value="Ingresa correo">
                 <input type="password" id="password" name="password" value="contraseña">
@@ -19,6 +32,7 @@
             </form>
         </div>
     </main>
+    <script src="../static/js/forms.js"></script>
     <!-- pie de pagina  -->
     <footer>
         {% include "shared/footer.html" %}
