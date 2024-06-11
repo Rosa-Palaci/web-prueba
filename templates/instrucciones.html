@@ -1,23 +1,15 @@
 <title> {{ titulo }} </title>
-<link rel="stylesheet" href="{{url_for('static', filename='css/login.css')}}">
+<link rel="stylesheet" href="{{url_for('static', filename='css/instrucciones.css')}}">
 <link rel="icon" type="image/png" href="{{ url_for('static', filename='../../../static/img/escudo.png') }}">
 
-<body>
+<body >
     <!-- seccion de navegación -->
     <header>
         {% include "shared/navbar.html" %} 
     </header>
     <!-- seccion principal -->
     <main class="main">
-        <div class="container-flex">
-            <img src="../static/img/profe-login.png" alt="profesores" class="profesores">
-            <form action="/login-profesores" method="post" class="form-login">
-                <h1>Inicio de Sesión para Profesores</h1>
-                <input type="text" id="usuario" name="usuario" value="Ingresa correo">
-                <input type="password" id="password" name="password" value="contraseña">
-                <input type="submit" value="Iniciar sesión">
-            </form>
-        </div>
+        <h1> Instrucciones del juego Metro-Market </h1>
     </main>
     <!-- pie de pagina  -->
     <footer>

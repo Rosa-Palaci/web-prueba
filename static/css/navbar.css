@@ -19,11 +19,12 @@ body, html {
     text-decoration: none;
     color: black; 
     margin: 10px; 
-    font-size: 16px;
+    font-size: 22px;
+    font-weight: bold;
 }
 
 .nav-links button {
-    background-color: #6c757d; 
+    background-color: #A6A6A6; 
     color: white;
     border: none;
     padding: 10px 20px;
@@ -31,6 +32,8 @@ body, html {
     border-radius: 5px; 
     cursor: pointer; 
     transition: background-color 0.3s ease;
+    font-size: 22px;
+    font-weight: bold;
 }
 
 .nav-links button:hover {
@@ -38,7 +41,7 @@ body, html {
 }
 
 .nav-links a:hover {
-    color: #FAF5F0; 
+    color: #315180; 
 }
 
 @media (max-width: 600px) {
@@ -52,6 +55,6 @@ body, html {
 
     .nav-links a {
         display: block;
-        margin: 5px 0; /* Espaciado entre links en pantallas pequeñas */
+        margin: 5px 0; 
     }
 }

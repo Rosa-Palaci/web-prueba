@@ -22,6 +22,12 @@ def login():
     titulo = "Inicio de sesión"
     return render_template('login.html', titulo=titulo)
 
+# instrucciones
+@app.route('/instrucciones')
+def instrucciones():
+    titulo = "Instrucciones"
+    return render_template('instrucciones.html', titulo=titulo)
+
 # bloque de prueba
 if __name__ == "__main__":
     app.run(debug=True)
