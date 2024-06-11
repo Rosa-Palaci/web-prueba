@@ -32,7 +32,7 @@ def login():
 
         if admin:
             flash('Inicio exitoso', 'success')
-            return redirect(url_for('home'))
+            return redirect(url_for('profesor'))
         else:
             flash('Correo electrónico o contraseña incorrectos', 'error')  
             return redirect(url_for('login'))  
@@ -49,7 +49,11 @@ def instrucciones():
     return render_template('instrucciones.html', titulo=titulo)
 
 # profesor
+@app.route('/profesor')
+def profesor():
+    titulo = "Profesor"
 
+    return render_template('profesor.htm', titulo=titulo)
 
 # bloque de prueba
 if __name__ == "__main__":
