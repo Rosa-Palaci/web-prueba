@@ -54,6 +54,7 @@ def profesor():
     titulo = "Profesor"
 
     return render_template('profesor.html', titulo=titulo)
+'''
 
 #Dashboard
 
@@ -86,6 +87,7 @@ def grupos():
 @app.route('/genero')
 def genero():
     return render_template('dashboards/genero.html')
+'''
 
 # bloque de prueba
 if __name__ == "__main__":
